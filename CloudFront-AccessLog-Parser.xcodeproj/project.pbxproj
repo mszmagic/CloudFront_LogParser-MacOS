@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAE1A8AB25F69E0500C475CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1A8AA25F69E0500C475CC /* AppDelegate.swift */; };
+		DAE1A8AD25F69E0500C475CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1A8AC25F69E0500C475CC /* ViewController.swift */; };
+		DAE1A8B025F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAE1A8AE25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld */; };
+		DAE1A8B225F69E0600C475CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE1A8B125F69E0600C475CC /* Assets.xcassets */; };
+		DAE1A8B525F69E0600C475CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE1A8B325F69E0600C475CC /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAE1A8A725F69E0500C475CC /* CloudFront-AccessLog-Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CloudFront-AccessLog-Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE1A8AA25F69E0500C475CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAE1A8AC25F69E0500C475CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAE1A8AF25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudFront_AccessLog_Parser.xcdatamodel; sourceTree = "<group>"; };
+		DAE1A8B125F69E0600C475CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAE1A8B425F69E0600C475CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAE1A8B625F69E0600C475CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE1A8B725F69E0600C475CC /* CloudFront_AccessLog_Parser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudFront_AccessLog_Parser.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAE1A8A425F69E0500C475CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAE1A89E25F69E0500C475CC = {
+			isa = PBXGroup;
+			children = (
+				DAE1A8A925F69E0500C475CC /* CloudFront-AccessLog-Parser */,
+				DAE1A8A825F69E0500C475CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAE1A8A825F69E0500C475CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAE1A8A725F69E0500C475CC /* CloudFront-AccessLog-Parser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAE1A8A925F69E0500C475CC /* CloudFront-AccessLog-Parser */ = {
+			isa = PBXGroup;
+			children = (
+				DAE1A8AA25F69E0500C475CC /* AppDelegate.swift */,
+				DAE1A8AC25F69E0500C475CC /* ViewController.swift */,
+				DAE1A8B125F69E0600C475CC /* Assets.xcassets */,
+				DAE1A8B325F69E0600C475CC /* Main.storyboard */,
+				DAE1A8B625F69E0600C475CC /* Info.plist */,
+				DAE1A8B725F69E0600C475CC /* CloudFront_AccessLog_Parser.entitlements */,
+				DAE1A8AE25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld */,
+			);
+			path = "CloudFront-AccessLog-Parser";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAE1A8A625F69E0500C475CC /* CloudFront-AccessLog-Parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE1A8BA25F69E0600C475CC /* Build configuration list for PBXNativeTarget "CloudFront-AccessLog-Parser" */;
+			buildPhases = (
+				DAE1A8A325F69E0500C475CC /* Sources */,
+				DAE1A8A425F69E0500C475CC /* Frameworks */,
+				DAE1A8A525F69E0500C475CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CloudFront-AccessLog-Parser";
+			productName = "CloudFront-AccessLog-Parser";
+			productReference = DAE1A8A725F69E0500C475CC /* CloudFront-AccessLog-Parser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAE1A89F25F69E0500C475CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DAE1A8A625F69E0500C475CC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DAE1A8A225F69E0500C475CC /* Build configuration list for PBXProject "CloudFront-AccessLog-Parser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAE1A89E25F69E0500C475CC;
+			productRefGroup = DAE1A8A825F69E0500C475CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAE1A8A625F69E0500C475CC /* CloudFront-AccessLog-Parser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAE1A8A525F69E0500C475CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE1A8B225F69E0600C475CC /* Assets.xcassets in Resources */,
+				DAE1A8B525F69E0600C475CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAE1A8A325F69E0500C475CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE1A8B025F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld in Sources */,
+				DAE1A8AD25F69E0500C475CC /* ViewController.swift in Sources */,
+				DAE1A8AB25F69E0500C475CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAE1A8B325F69E0600C475CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAE1A8B425F69E0600C475CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAE1A8B825F69E0600C475CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAE1A8B925F69E0600C475CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DAE1A8BB25F69E0600C475CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CloudFront-AccessLog-Parser/CloudFront_AccessLog_Parser.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9LFMJA3SC2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "CloudFront-AccessLog-Parser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShunzheMa.CloudFront-AccessLog-Parser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DAE1A8BC25F69E0600C475CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CloudFront-AccessLog-Parser/CloudFront_AccessLog_Parser.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9LFMJA3SC2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "CloudFront-AccessLog-Parser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ShunzheMa.CloudFront-AccessLog-Parser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAE1A8A225F69E0500C475CC /* Build configuration list for PBXProject "CloudFront-AccessLog-Parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE1A8B825F69E0600C475CC /* Debug */,
+				DAE1A8B925F69E0600C475CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE1A8BA25F69E0600C475CC /* Build configuration list for PBXNativeTarget "CloudFront-AccessLog-Parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE1A8BB25F69E0600C475CC /* Debug */,
+				DAE1A8BC25F69E0600C475CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAE1A8AE25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAE1A8AF25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodel */,
+			);
+			currentVersion = DAE1A8AF25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodel */;
+			path = CloudFront_AccessLog_Parser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DAE1A89F25F69E0500C475CC /* Project object */;
+}
