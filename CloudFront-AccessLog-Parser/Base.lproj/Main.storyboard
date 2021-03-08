@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="CloudFront_AccessLog_Parser" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,15 +704,90 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="CloudFront_AccessLog_Parser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="723" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xbY-fP-U3s">
+                                <rect key="frame" x="439" y="13" width="271" height="32"/>
+                                <buttonCell key="cell" type="push" title="CloudFrontログ .gz ファイルをインポート" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MaM-Rm-ePB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="actionPickFiles:" target="XfG-lQ-9wD" id="aTb-0h-vzu"/>
+                                </connections>
+                            </button>
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Saq-75-e70">
+                                <rect key="frame" x="20" y="60" width="683" height="400"/>
+                                <clipView key="contentView" id="UTp-Lg-R9u">
+                                    <rect key="frame" x="1" y="1" width="681" height="398"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="XtY-Bw-mB8" id="PnW-El-jzf">
+                                            <rect key="frame" x="0.0" y="0.0" width="681" height="370"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <size key="intercellSpacing" width="17" height="0.0"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                        </tableView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="wcn-DT-gpa">
+                                    <rect key="frame" x="1" y="396" width="681" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="lUu-aJ-SWF">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <tableHeaderView key="headerView" wantsLayer="YES" id="XtY-Bw-mB8">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="28"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableHeaderView>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qyq-yp-XRr">
+                                <rect key="frame" x="13" y="13" width="119" height="32"/>
+                                <buttonCell key="cell" type="push" title=".csvとして表示" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mDm-bg-ghy">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="actionOpenAsCSVFile:" target="XfG-lQ-9wD" id="Zxp-f6-54i"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s4L-hr-2tv">
+                                <rect key="frame" x="130" y="13" width="191" height="32"/>
+                                <buttonCell key="cell" type="push" title=".csvにエクスポートして開く" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m7o-3e-UwK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="actionGenerateCSVFile:" target="XfG-lQ-9wD" id="1fz-EO-m7M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Saq-75-e70" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="0YF-Bg-nTz"/>
+                            <constraint firstItem="Saq-75-e70" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="2UG-sq-LCV"/>
+                            <constraint firstAttribute="trailing" secondItem="xbY-fP-U3s" secondAttribute="trailing" constant="20" symbolic="YES" id="NEl-2v-Pxf"/>
+                            <constraint firstAttribute="bottom" secondItem="Qyq-yp-XRr" secondAttribute="bottom" constant="20" symbolic="YES" id="ey3-x0-4Kc"/>
+                            <constraint firstAttribute="bottom" secondItem="xbY-fP-U3s" secondAttribute="bottom" constant="20" symbolic="YES" id="hAH-b3-M8Q"/>
+                            <constraint firstAttribute="trailing" secondItem="Saq-75-e70" secondAttribute="trailing" constant="20" symbolic="YES" id="k36-0o-zbG"/>
+                            <constraint firstItem="Qyq-yp-XRr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="lSD-Ex-F2u"/>
+                            <constraint firstAttribute="bottom" secondItem="s4L-hr-2tv" secondAttribute="bottom" constant="20" symbolic="YES" id="pFd-Cm-vte"/>
+                            <constraint firstItem="xbY-fP-U3s" firstAttribute="top" secondItem="Saq-75-e70" secondAttribute="bottom" constant="20" symbolic="YES" id="v8E-cN-P7r"/>
+                            <constraint firstItem="s4L-hr-2tv" firstAttribute="leading" secondItem="Qyq-yp-XRr" secondAttribute="trailing" constant="12" symbolic="YES" id="xQh-ai-qfa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="PnW-El-jzf" id="nnM-ux-PeB"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="196.5" y="760"/>
         </scene>
     </scenes>
 </document>

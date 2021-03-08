@@ -3,26 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DAE1A8AB25F69E0500C475CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1A8AA25F69E0500C475CC /* AppDelegate.swift */; };
 		DAE1A8AD25F69E0500C475CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1A8AC25F69E0500C475CC /* ViewController.swift */; };
-		DAE1A8B025F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAE1A8AE25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld */; };
 		DAE1A8B225F69E0600C475CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE1A8B125F69E0600C475CC /* Assets.xcassets */; };
 		DAE1A8B525F69E0600C475CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE1A8B325F69E0600C475CC /* Main.storyboard */; };
+		DAE1A8C025F6C52100C475CC /* Gzip in Frameworks */ = {isa = PBXBuildFile; productRef = DAE1A8BF25F6C52100C475CC /* Gzip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAE1A8A725F69E0500C475CC /* CloudFront-AccessLog-Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CloudFront-AccessLog-Parser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE1A8AA25F69E0500C475CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE1A8AC25F69E0500C475CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAE1A8AF25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudFront_AccessLog_Parser.xcdatamodel; sourceTree = "<group>"; };
 		DAE1A8B125F69E0600C475CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE1A8B425F69E0600C475CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAE1A8B625F69E0600C475CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAE1A8B725F69E0600C475CC /* CloudFront_AccessLog_Parser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudFront_AccessLog_Parser.entitlements; sourceTree = "<group>"; };
+		DAE1A8C325F6D65F00C475CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE1A8C025F6C52100C475CC /* Gzip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +40,7 @@
 		DAE1A89E25F69E0500C475CC = {
 			isa = PBXGroup;
 			children = (
+				DAE1A8C325F6D65F00C475CC /* README.md */,
 				DAE1A8A925F69E0500C475CC /* CloudFront-AccessLog-Parser */,
 				DAE1A8A825F69E0500C475CC /* Products */,
 			);
@@ -61,7 +63,6 @@
 				DAE1A8B325F69E0600C475CC /* Main.storyboard */,
 				DAE1A8B625F69E0600C475CC /* Info.plist */,
 				DAE1A8B725F69E0600C475CC /* CloudFront_AccessLog_Parser.entitlements */,
-				DAE1A8AE25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld */,
 			);
 			path = "CloudFront-AccessLog-Parser";
 			sourceTree = "<group>";
@@ -82,6 +83,9 @@
 			dependencies = (
 			);
 			name = "CloudFront-AccessLog-Parser";
+			packageProductDependencies = (
+				DAE1A8BF25F6C52100C475CC /* Gzip */,
+			);
 			productName = "CloudFront-AccessLog-Parser";
 			productReference = DAE1A8A725F69E0500C475CC /* CloudFront-AccessLog-Parser.app */;
 			productType = "com.apple.product-type.application";
@@ -109,6 +113,9 @@
 				Base,
 			);
 			mainGroup = DAE1A89E25F69E0500C475CC;
+			packageReferences = (
+				DAE1A8BE25F6C52100C475CC /* XCRemoteSwiftPackageReference "GzipSwift" */,
+			);
 			productRefGroup = DAE1A8A825F69E0500C475CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE1A8B025F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld in Sources */,
 				DAE1A8AD25F69E0500C475CC /* ViewController.swift in Sources */,
 				DAE1A8AB25F69E0500C475CC /* AppDelegate.swift in Sources */,
 			);
@@ -335,18 +341,24 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		DAE1A8AE25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DAE1A8AF25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodel */,
-			);
-			currentVersion = DAE1A8AF25F69E0500C475CC /* CloudFront_AccessLog_Parser.xcdatamodel */;
-			path = CloudFront_AccessLog_Parser.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		DAE1A8BE25F6C52100C475CC /* XCRemoteSwiftPackageReference "GzipSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1024jp/GzipSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAE1A8BF25F6C52100C475CC /* Gzip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAE1A8BE25F6C52100C475CC /* XCRemoteSwiftPackageReference "GzipSwift" */;
+			productName = Gzip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAE1A89F25F69E0500C475CC /* Project object */;
 }
